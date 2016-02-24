@@ -1,4 +1,4 @@
-set nu
+"set nu
 set laststatus=2 
 syntax on
 
@@ -25,7 +25,7 @@ set softtabstop=4
 set shiftwidth=4 
 
 " 不要用空格代替制表符 
-set noexpandtab 
+"set noexpandtab 
 
 " 不要换行 
 set nowrap 

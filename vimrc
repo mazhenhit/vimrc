@@ -15,7 +15,7 @@ set autoindent
 set smartindent 
 
 " 使用C样式的缩进 
-set cindent 
+"set cindent 
 
 " 制表符为4 
 set tabstop=4 
@@ -33,3 +33,6 @@ set nowrap
 " 在行和段开始处使用制表符 
 set smarttab 
 set nobackup
+
+"set for Makefile
+autocmd FileType makefile set noexpandtab

@@ -1,6 +1,37 @@
-"set nu
-set laststatus=2 
+"解决win下，字符乱码问题"
+if has("multi_byte") 
+    " UTF-8 编码 
+    set encoding=utf-8 
+    set termencoding=utf-8 
+    set formatoptions+=mM 
+    set fencs=utf-8,gbk 
+    if v:lang =~? '^/(zh/)/|/(ja/)/|/(ko/)' 
+        set ambiwidth=double 
+    endif 
+    if has("win32") 
+        source $VIMRUNTIME/delmenu.vim 
+        source $VIMRUNTIME/menu.vim 
+        language messages zh_CN.utf-8 
+    endif 
+else 
+    echoerr "Sorry, this version of (g)vim was not compiled with +multi_byte" 
+endif
+
+"显示行号
+set nu
+
+"背景色设置为暗色
+colorscheme desert 
+
+"语法高亮
+syntax enable 
 syntax on
+
+"设置字体格式
+set guifont=Courier\ New:h12
+
+"设置倒数第二行显示文件名
+set laststatus=2 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
 " 文本格式和排版 

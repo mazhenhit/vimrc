@@ -1,5 +1,5 @@
 set fileencodings=utf-8,gb2312,gbk,gb18030
-set termencoding=utf-8
+"set termencoding=utf-8
 set fileformat=unix
 set encoding=prc
 set nu
